@@ -1,0 +1,136 @@
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 19-7-16 ÏÂÎç10:00
+Description: Rendering entity in world
+
+java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1445)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1469)
+	at me.professionalskills.common.event.SkillsEvent.renderSkill01(SkillsEvent.java:292)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_9_SkillsEvent_renderSkill01_Post.invoke(.dynamic)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54)
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140)
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:297)
+	at net.minecraft.client.renderer.entity.RenderLiving.doRender(RenderLiving.java:36)
+	at net.minecraft.client.renderer.entity.RenderLiving.doRender(RenderLiving.java:156)
+	at net.minecraft.client.renderer.entity.RenderManager.func_147939_a(RenderManager.java:300)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:278)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:251)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:527)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1300)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1087)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1445)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1469)
+	at me.professionalskills.common.event.SkillsEvent.renderSkill01(SkillsEvent.java:292)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_9_SkillsEvent_renderSkill01_Post.invoke(.dynamic)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54)
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140)
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:297)
+	at net.minecraft.client.renderer.entity.RenderLiving.doRender(RenderLiving.java:36)
+	at net.minecraft.client.renderer.entity.RenderLiving.doRender(RenderLiving.java:156)
+
+-- Entity being rendered --
+Details:
+	Entity Type: Cow (net.minecraft.entity.passive.EntityCow)
+	Entity ID: 465
+	Entity Name: Å£
+	Entity's Exact location: 61.69, 63.00, 281.31
+	Entity's Block location: World: (61,63,281), Chunk: (at 13,3,9 in 3,17; contains blocks 48,0,272 to 63,255,287), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+
+-- Renderer details --
+Details:
+	Assigned renderer: net.minecraft.client.renderer.entity.RenderCow@1bd66900
+	Location: 2.03,-2.62,-5.25 - World: (2,-3,-6), Chunk: (at 2,-1,10 in 0,-1; contains blocks 0,0,-16 to 15,255,-1), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Rotation: 118.125
+	Delta: 0.33248734
+Stacktrace:
+	at net.minecraft.client.renderer.entity.RenderManager.func_147939_a(RenderManager.java:300)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:278)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:251)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:527)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1300)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player838'/186, l='MpServer', x=59.66, y=65.62, z=286.57]]
+	Chunk stats: MultiplayerChunkCache: 209, 209
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (56,64,292), Chunk: (at 8,4,4 in 3,18; contains blocks 48,0,288 to 63,255,303), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 369945 game time, 417544 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 51 total; [EntityCow['Å£'/129, l='MpServer', x=104.63, y=71.00, z=283.75], EntitySheep['Ñò'/130, l='MpServer', x=111.28, y=63.00, z=311.22], EntitySkeleton['÷¼÷Ã'/387, l='MpServer', x=99.88, y=23.00, z=254.25], EntitySkeleton['÷¼÷Ã'/389, l='MpServer', x=108.50, y=22.00, z=249.50], EntityCow['Å£'/137, l='MpServer', x=115.50, y=65.00, z=263.63], EntityCow['Å£'/138, l='MpServer', x=113.41, y=63.00, z=263.72], EntitySheep['Ñò'/140, l='MpServer', x=114.03, y=62.08, z=319.03], EntityCow['Å£'/142, l='MpServer', x=106.41, y=63.00, z=335.22], EntitySheep['Ñò'/143, l='MpServer', x=121.06, y=69.00, z=342.06], EntitySkeleton['÷¼÷Ã'/401, l='MpServer', x=76.50, y=46.00, z=227.50], EntitySkeleton['÷¼÷Ã'/402, l='MpServer', x=76.50, y=46.00, z=226.50], EntitySheep['Ñò'/146, l='MpServer', x=122.53, y=63.00, z=319.63], EntitySkeleton['÷¼÷Ã'/403, l='MpServer', x=88.50, y=20.00, z=244.50], EntitySkeleton['÷¼÷Ã'/404, l='MpServer', x=84.50, y=20.00, z=247.50], EntityZombie['½©Ê¬'/405, l='MpServer', x=90.50, y=20.00, z=245.50], EntityZombie['½©Ê¬'/406, l='MpServer', x=96.56, y=16.00, z=244.00], EntityCreeper['ÅÀÐÐÕß'/292, l='MpServer', x=98.50, y=43.00, z=266.50], EntitySkeleton['÷¼÷Ã'/297, l='MpServer', x=50.47, y=37.00, z=288.13], EntitySkeleton['÷¼÷Ã'/429, l='MpServer', x=71.50, y=29.00, z=294.50], EntitySkeleton['÷¼÷Ã'/430, l='MpServer', x=65.59, y=29.00, z=292.84], EntitySkeleton['÷¼÷Ã'/431, l='MpServer', x=71.50, y=29.00, z=297.50], EntityBat['òùòð'/434, l='MpServer', x=52.16, y=23.10, z=259.25], EntityBat['òùòð'/435, l='MpServer', x=58.97, y=24.10, z=260.44], EntityItem['item.item.leather'/438, l='MpServer', x=53.75, y=61.13, z=300.63], EntityItem['item.item.beefRaw'/439, l='MpServer', x=53.28, y=61.13, z=299.56], EntitySheep['Ñò'/55, l='MpServer', x=12.25, y=90.00, z=228.41], EntityEnderman['Ä©Ó°ÈË'/440, l='MpServer', x=86.97, y=18.00, z=251.56], EntitySheep['Ñò'/59, l='MpServer', x=16.19, y=90.00, z=224.50], EntitySheep['Ñò'/60, l='MpServer', x=16.94, y=90.00, z=232.97], EntitySkeleton['÷¼÷Ã'/450, l='MpServer', x=92.50, y=24.00, z=254.50], EntityZombie['½©Ê¬'/451, l='MpServer', x=98.50, y=24.00, z=255.50], EntityCow['Å£'/464, l='MpServer', x=62.50, y=63.00, z=279.50], EntityCow['Å£'/465, l='MpServer', x=61.69, y=63.00, z=281.31], EntityCow['Å£'/85, l='MpServer', x=54.28, y=68.00, z=255.53], EntitySkeleton['÷¼÷Ã'/86, l='MpServer', x=61.06, y=49.00, z=265.53], EntityItem['item.item.leather'/470, l='MpServer', x=60.84, y=63.13, z=282.09], EntityItem['item.item.beefRaw'/471, l='MpServer', x=59.59, y=63.13, z=283.16], EntityCreeper['ÅÀÐÐÕß'/88, l='MpServer', x=48.56, y=35.00, z=298.03], EntityItem['item.item.beefRaw'/472, l='MpServer', x=60.84, y=63.13, z=281.97], EntityZombie['½©Ê¬'/89, l='MpServer', x=53.59, y=36.00, z=300.09], EntitySquid['öÏÓã'/93, l='MpServer', x=78.50, y=57.01, z=277.50], EntitySlime['Ê·À³Ä·'/95, l='MpServer', x=67.78, y=29.00, z=292.78], EntityZombie['½©Ê¬'/98, l='MpServer', x=73.31, y=32.00, z=310.50], EntityZombie['½©Ê¬'/355, l='MpServer', x=48.50, y=17.00, z=285.50], EntityZombie['½©Ê¬'/100, l='MpServer', x=76.50, y=32.00, z=313.50], EntityCreeper['ÅÀÐÐÕß'/103, l='MpServer', x=67.50, y=11.00, z=333.50], EntityItem['item.item.arrow'/231, l='MpServer', x=41.81, y=48.13, z=320.31], EntityItem['item.item.bone'/232, l='MpServer', x=42.03, y=47.13, z=319.84], EntitySquid['öÏÓã'/114, l='MpServer', x=80.73, y=55.65, z=271.16], EntityClientPlayerMP['Player838'/186, l='MpServer', x=59.66, y=65.62, z=286.57], EntitySquid['öÏÓã'/121, l='MpServer', x=85.50, y=49.01, z=309.50]]
+	Retry entities: 0 total; []
+	Server brand: kcauldron,cauldron,craftbukkit,mcpc,fml,forge
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:984)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_201, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 385609440 bytes (367 MB) / 577765376 bytes (551 MB) up to 1888485376 bytes (1801 MB)
+	JVM Flags: 0 total; 
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJA	Forge{10.13.4.1614} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJA	professionalskills{1.0} [professionalskills] (modid-1.0.jar) 
+	GL info: ' Vendor: 'Intel' Version: '4.5.0 - Build 24.20.100.6345' Renderer: 'Intel(R) UHD Graphics 620'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: Intel(R) UHD Graphics 620 GL version 4.5.0 - Build 24.20.100.6345, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: ¼òÌåÖÐÎÄ (ÖÐ¹ú)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

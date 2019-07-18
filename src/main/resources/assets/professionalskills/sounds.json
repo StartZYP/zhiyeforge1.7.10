@@ -1,0 +1,56 @@
+{
+  "skill00": {
+    "category": "master",
+    "sounds": [
+      "skill00"
+    ]
+  },
+  "skill01": {
+    "category": "master",
+    "sounds": [
+      "skill01"
+    ]
+  },
+  "skill02": {
+    "category": "master",
+    "sounds": [
+      "skill02"
+    ]
+  },
+  "skill03": {
+    "category": "master",
+    "sounds": [
+      "skill03"
+    ]
+  },
+  "skill04": {
+    "category": "master",
+    "sounds": [
+      "skill04"
+    ]
+  },
+  "skill10": {
+    "category": "master",
+    "sounds": [
+      "skill10"
+    ]
+  },
+  "skill12": {
+    "category": "master",
+    "sounds": [
+      "skill12"
+    ]
+  },
+  "skill13": {
+    "category": "master",
+    "sounds": [
+      "skill13"
+    ]
+  },
+  "skill14": {
+    "category": "master",
+    "sounds": [
+      "skill14"
+    ]
+  }
+}
