@@ -1,40 +1,39 @@
-[17:13:11] [main/INFO]: Setting user: Player79
-[17:13:12] [Client thread/INFO]: LWJGL Version: 2.9.1
-[17:13:20] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:professionalskills
-[17:13:21] [Sound Library Loader/INFO]: Sound engine started
-[17:13:22] [Client thread/WARN]: File minecraft:sounds/mob/horse/zombie/hit3.ogg does not exist, cannot add it to event minecraft:mob.horse.zombie.hit
-[17:13:24] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[17:13:24] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[17:13:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:professionalskills
-[17:13:25] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[17:13:25] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[17:13:26] [Client thread/WARN]: File minecraft:sounds/mob/horse/zombie/hit3.ogg does not exist, cannot add it to event minecraft:mob.horse.zombie.hit
-[17:13:26] [Sound Library Loader/INFO]: Sound engine started
-[17:14:34] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
-[17:14:35] [Client thread/INFO]: [CHAT] Player79 joined the game.
-[17:14:35] [Client thread/INFO]: [CHAT] ?欢迎, Player79!
-[17:14:35] [Client thread/INFO]: [CHAT] 输入 /help 查看帮助.
-[17:14:35] [Client thread/INFO]: [CHAT] 玩家列表: Player79
-[17:14:35] [Client thread/INFO]: [CHAT] 金币余额: $0枚
-[17:14:35] [Client thread/INFO]: [CHAT] 现在时间: 17:14:352019-7-18
-[17:14:35] [Client thread/INFO]: [CHAT] 在线人数: 1人
-[17:14:35] [Client thread/INFO]: [CHAT] 欢迎新玩家Player79来到服务器!
-[17:14:43] [Client thread/INFO]: [CHAT] [RPG系统]你已回复生命值1.0点
-[17:14:48] [Client thread/INFO]: [CHAT] [RPG系统]你已回复生命值1.0点
-[17:14:52] [Client thread/INFO]: [CHAT] [RPG系统]你已回复生命值1.0点
-[17:14:56] [Client thread/INFO]: [CHAT] [RPG系统]你已回复生命值1.0点
-[17:15:00] [Client thread/INFO]: [CHAT] [RPG系统]你已回复生命值1.0点
-[17:15:16] [Client thread/INFO]: [CHAT] [CONSOLE: Opped Player79]
-[17:15:30] [Client thread/INFO]: [CHAT] Lore successfully modified!
-[17:15:30] [Client thread/INFO]: [CHAT] Player79 刚刚获得了 [打开物品栏] 成就！
-[17:15:36] [Client thread/INFO]: [CHAT] 您的游戏模式已更新
-[17:15:36] [Client thread/INFO]: [CHAT] 已设置Player79的游戏模式为创造模式.
-[17:15:50] [Client thread/INFO]: [CHAT] Lore successfully modified!
-[17:15:52] [Client thread/INFO]: [CHAT] Lore successfully modified!
-[17:15:54] [Client thread/INFO]: [CHAT] Lore successfully modified!
-[17:15:56] [Client thread/INFO]: [CHAT] Lore successfully modified!
-[17:16:32] [Client thread/INFO]: [CHAT] 幻战域排行榜
-[17:16:32] [Client thread/INFO]: [CHAT] 第1名:Player79战斗力500
-[17:16:32] [Client thread/INFO]: [CHAT] 第2名:playername战斗力222
-[17:16:32] [Client thread/INFO]: [CHAT] 第3名:Player737战斗力100
-[17:16:32] [Client thread/INFO]: [CHAT] 你的战斗力500
+[00:26:41] [main/INFO]: Setting user: Player18
+[00:26:42] [Client thread/INFO]: LWJGL Version: 2.9.1
+[00:26:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:professionalskills
+[00:26:53] [Sound Library Loader/INFO]: Sound engine started
+[00:26:55] [Client thread/WARN]: File minecraft:sounds/mob/horse/zombie/hit3.ogg does not exist, cannot add it to event minecraft:mob.horse.zombie.hit
+[00:26:56] [Client thread/WARN]: File minecraft:sounds/random/glass3.ogg does not exist, cannot add it to event minecraft:dig.glass
+[00:26:56] [Client thread/WARN]: File minecraft:sounds/random/glass3.ogg does not exist, cannot add it to event minecraft:game.potion.smash
+[00:26:57] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[00:26:57] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[00:26:58] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:professionalskills
+[00:26:58] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[00:26:59] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[00:27:00] [Sound Library Loader/INFO]: Sound engine started
+[00:27:01] [Client thread/WARN]: File minecraft:sounds/mob/horse/zombie/hit3.ogg does not exist, cannot add it to event minecraft:mob.horse.zombie.hit
+[00:27:01] [Client thread/WARN]: File minecraft:sounds/random/glass3.ogg does not exist, cannot add it to event minecraft:dig.glass
+[00:27:02] [Client thread/WARN]: File minecraft:sounds/random/glass3.ogg does not exist, cannot add it to event minecraft:game.potion.smash
+[00:27:09] [Client thread/INFO]: Connecting to www.xyhzy.xyz, 17447
+[00:28:01] [Client thread/ERROR]: Can't ping 127.0.0.1: Internal Exception: io.netty.handler.codec.DecoderException: com.google.gson.JsonSyntaxException: Expected status to be a JsonObject, was "Ser...g."
+[00:28:06] [Client thread/ERROR]: Can't ping 127.0.0.1: Internal Exception: io.netty.handler.codec.DecoderException: com.google.gson.JsonSyntaxException: Expected status to be a JsonObject, was "Ser...g."
+[00:28:46] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[00:28:50] [Client thread/INFO]: [CHAT] Player18 joined the game.
+[00:28:52] [Client thread/INFO]: [CHAT] ?欢迎, Player18!
+[00:28:52] [Client thread/INFO]: [CHAT] 输入 /help 查看帮助.
+[00:28:52] [Client thread/INFO]: [CHAT] 玩家列表: Player18
+[00:28:52] [Client thread/INFO]: [CHAT] 金币余额: $0枚
+[00:28:52] [Client thread/INFO]: [CHAT] 现在时间: 0:28:522019-7-28
+[00:28:52] [Client thread/INFO]: [CHAT] 在线人数: 1人
+[00:28:52] [Client thread/INFO]: [CHAT] 欢迎新玩家Player18来到服务器!
+[00:29:01] [Client thread/INFO]: [CHAT] [CONSOLE: Opped player18]
+[00:29:14] [Client thread/INFO]: [CHAT] [RPG系统]你已回复生命值1.0点
+[00:29:18] [Client thread/INFO]: [CHAT] [RPG系统]你已回复生命值1.0点
+[00:29:22] [Client thread/INFO]: [CHAT] [RPG系统]你已回复生命值1.0点
+[00:29:23] [Client thread/INFO]: [CHAT] 使用“/back”命令来回到死亡地点.
+[00:29:23] [Client thread/INFO]: [CHAT] Player18 被 Zombie 杀死了
+[00:29:32] [Client thread/INFO]: [CHAT] The Item you are holding does not support Lore
+[00:29:34] [Client thread/INFO]: [CHAT] Player18 刚刚获得了 [打开物品栏] 成就！
+[00:29:43] [Client thread/INFO]: [CHAT] Lore successfully modified!
+[00:29:55] [Client thread/INFO]: [CHAT] 成功选择职业
+[00:30:34] [Client thread/INFO]: Stopping!

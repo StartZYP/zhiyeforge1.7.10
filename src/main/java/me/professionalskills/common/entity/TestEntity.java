@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * 测试玩家释放技能时是否有目标
  */
-public class TestEntity extends EntityThrowable {
+    public class TestEntity extends EntityThrowable {
 
     private int field_145788_c = -1;
     private int field_145786_d = -1;

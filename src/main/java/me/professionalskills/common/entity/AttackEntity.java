@@ -69,7 +69,7 @@ public class AttackEntity extends EntityThrowable {
         this.motionX = (double) (-MathHelper.sin(this.rotationYaw / 180.0F * (float) Math.PI) * MathHelper.cos(this.rotationPitch / 180.0F * (float) Math.PI) * f);
         this.motionZ = (double) (MathHelper.cos(this.rotationYaw / 180.0F * (float) Math.PI) * MathHelper.cos(this.rotationPitch / 180.0F * (float) Math.PI) * f);
         this.motionY = (double) (-MathHelper.sin((this.rotationPitch + this.func_70183_g()) / 180.0F * (float) Math.PI) * f);
-        this.setThrowableHeading(this.motionX, this.motionY, this.motionZ, speed, 1.0F);
+        this.setThrowableHeading(this.motionX, this.motionY, this.motionZ, speed/10, 1.0F);
         this.setSize(2, 2);
         this.skillID = skillID;
         this.id = id;

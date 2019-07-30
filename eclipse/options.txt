@@ -91,7 +91,7 @@ key_技能2:47
 key_技能3:48
 key_技能4:49
 key_技能升级界面:38
-soundCategory_master:0.0
+soundCategory_master:0.07284768
 soundCategory_music:1.0
 soundCategory_record:1.0
 soundCategory_weather:1.0

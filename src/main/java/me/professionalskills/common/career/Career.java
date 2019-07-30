@@ -119,11 +119,13 @@ public class Career {
                         TestEntity testEntity = new TestEntity(playerMP.getEntityWorld(), playerMP, skill, num, 5, new RunSkill() {
                             @Override
                             public void runSkill(EntityPlayer playerMP, Career.Skill skill, float num) {
+                                System.out.println("技能释放成功");
                                 if (SkillsEvent.time3 == -1) {
                                     SkillsEvent.time3 = skill.coolDown * 20;
                                     if (Minecraft.getMinecraft() != null && Minecraft.getMinecraft().thePlayer != null) {
                                         float angle = (-playerMP.rotationYaw / 180F) * 3.141593F;
-                                        Minecraft.getMinecraft().theWorld.playSound(playerMP.posX,playerMP.posY,playerMP.posZ,ProfessionalSkills.MODID + ":skill03",1.0f,1.0f,false);                                        Minecraft.getMinecraft().effectRenderer.addEffect(new CustomParticle1(playerMP.getEntityWorld(), playerMP.posX - 0.2f * MathHelper.cos(angle), playerMP.posY - 0.6f, playerMP.posZ + 0.2f * MathHelper.sin(angle), playerMP));
+                                        Minecraft.getMinecraft().theWorld.playSound(playerMP.posX,playerMP.posY,playerMP.posZ,ProfessionalSkills.MODID + ":skill03",1.0f,1.0f,false);
+                                        Minecraft.getMinecraft().effectRenderer.addEffect(new CustomParticle1(playerMP.getEntityWorld(), playerMP.posX - 0.2f * MathHelper.cos(angle), playerMP.posY - 0.6f, playerMP.posZ + 0.2f * MathHelper.sin(angle), playerMP));
                                         Minecraft.getMinecraft().theWorld.spawnEntityInWorld(new AttackEntity(playerMP.getEntityWorld(), playerMP, 0, 3, num / 10, 20));
                                     }
                                 }

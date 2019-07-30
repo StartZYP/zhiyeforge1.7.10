@@ -78,7 +78,7 @@ public class GuiSkill extends GuiScreen {
 
 
         fontRenderer.drawStringWithShadow(String.format("§l" + mc.thePlayer.getDisplayName()), width / 2 - 136, height / 2 - 66, 0xFFFFFF);
-        fontRenderer.drawStringWithShadow(String.format("§l" + CareerEvent.career.level), width / 2 - 70, height / 2 - 66, 0xFFFFFF);
+        fontRenderer.drawStringWithShadow(String.format("§l" + mc.thePlayer.experienceLevel), width / 2 - 70, height / 2 - 66, 0xFFFFFF);
         fontRenderer.drawStringWithShadow(String.format("§l" + CareerEvent.player.zdl), width / 2 - 126, height / 2 - 51, 0xFFFFFF);
 
         fontRenderer.drawStringWithShadow(String.format("§l" + CareerEvent.player.critDamage), width / 2 - 126, height / 2 - 11, 0xFFFFFF);
